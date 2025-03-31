@@ -1,0 +1,205 @@
+kind: Node
+apiVersion: v1
+metadata:
+  name: vdcalta3035
+  resourceVersion: '618226708'
+  creationTimestamp: '2023-05-10T18:00:33Z'
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: vdcalta3035
+    kubernetes.io/os: linux
+    node-role.kubernetes.io/worker: ''
+    node.openshift.io/os_id: rhcos
+    node_group: worker
+  annotations:
+    machineconfiguration.openshift.io/controlPlaneTopology: HighlyAvailable
+    machineconfiguration.openshift.io/lastObservedServerCAAnnotation: 'false'
+    k8s.ovn.org/node-subnets: '{"default":"10.128.3.0/25"}'
+    machineconfiguration.openshift.io/lastAppliedDrain: uncordon-rendered-worker-df9efa77cda9040bb587b93b0a726470
+    k8s.ovn.org/node-mgmt-port-mac-address: 'fa:eb:fa:d5:6b:c6'
+    machineconfiguration.openshift.io/currentConfig: rendered-worker-df9efa77cda9040bb587b93b0a726470
+    machineconfiguration.openshift.io/desiredConfig: rendered-worker-df9efa77cda9040bb587b93b0a726470
+    machineconfiguration.openshift.io/post-config-action: ''
+    machineconfiguration.openshift.io/lastSyncedControllerConfigResourceVersion: '617616124'
+    k8s.ovn.org/node-primary-ifaddr: '{"ipv4":"10.95.70.7/24"}'
+    k8s.ovn.org/node-transit-switch-port-ifaddr: '{"ipv4":"100.88.0.4/16"}'
+    k8s.ovn.org/node-id: '4'
+    k8s.ovn.org/remote-zone-migrated: vdcalta3035
+    k8s.ovn.org/zone-name: vdcalta3035
+    volumes.kubernetes.io/controller-managed-attach-detach: 'true'
+    machineconfiguration.openshift.io/desiredDrain: uncordon-rendered-worker-df9efa77cda9040bb587b93b0a726470
+    k8s.ovn.org/node-chassis-id: cad5026b-7126-452d-8939-9f5f3c3a4e86
+    k8s.ovn.org/host-cidrs: '["10.95.70.7/24","10.95.71.2/24"]'
+    machineconfiguration.openshift.io/ssh: accessed
+    k8s.ovn.org/host-addresses: '["10.95.70.7","10.95.70.21"]'
+    k8s.ovn.org/l3-gateway-config: '{"default":{"mode":"shared","interface-id":"br-ex_vdcalta3035","mac-address":"00:50:56:81:56:1c","ip-addresses":["10.95.70.7/24"],"ip-address":"10.95.70.7/24","next-hops":["10.95.70.1"],"next-hop":"10.95.70.1","node-port-enable":"true","vlan-id":"0"}}'
+    machineconfiguration.openshift.io/reason: ''
+    alpha.kubernetes.io/provided-node-ip: 10.95.70.7
+    k8s.ovn.org/node-gateway-router-lrp-ifaddr: '{"ipv4":"100.64.0.4/16"}'
+    csi.volume.kubernetes.io/nodeid: '{"csi.vsphere.vmware.com":"42012adb-80ae-5d69-3ec8-b7c5bf9a22d6"}'
+    machineconfiguration.openshift.io/state: Done
+    k8s.ovn.org/network-ids: '{"default":"0"}'
+  managedFields:
+    - manager: ancient-changes
+      operation: Update
+      apiVersion: v1
+      time: '2023-05-10T18:00:33Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:alpha.kubernetes.io/provided-node-ip': {}
+            'f:k8s.ovn.org/node-subnets': {}
+            'f:volumes.kubernetes.io/controller-managed-attach-detach': {}
+          'f:labels':
+            .: {}
+            'f:beta.kubernetes.io/arch': {}
+            'f:beta.kubernetes.io/os': {}
+            'f:kubernetes.io/arch': {}
+            'f:kubernetes.io/hostname': {}
+            'f:kubernetes.io/os': {}
+            'f:node-role.kubernetes.io/worker': {}
+            'f:node.openshift.io/os_id': {}
+        'f:spec':
+          'f:providerID': {}
+    - manager: kubectl-label
+      operation: Update
+      apiVersion: v1
+      time: '2024-01-24T08:58:51Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            'f:node_group': {}
+    - manager: vdcalta3035
+      operation: Update
+      apiVersion: v1
+      time: '2024-12-17T18:25:12Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:k8s.ovn.org/l3-gateway-config': {}
+            'f:k8s.ovn.org/node-chassis-id': {}
+            'f:k8s.ovn.org/node-mgmt-port-mac-address': {}
+            'f:k8s.ovn.org/node-primary-ifaddr': {}
+    - manager: vdcalta2791
+      operation: Update
+      apiVersion: v1
+      time: '2024-12-19T15:28:10Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:k8s.ovn.org/network-ids': {}
+            'f:k8s.ovn.org/node-gateway-router-lrp-ifaddr': {}
+            'f:k8s.ovn.org/node-id': {}
+            'f:k8s.ovn.org/node-transit-switch-port-ifaddr': {}
+      subresource: status
+    - manager: machine-config-controller
+      operation: Update
+      apiVersion: v1
+      time: '2025-01-09T15:05:18Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:machineconfiguration.openshift.io/controlPlaneTopology': {}
+            'f:machineconfiguration.openshift.io/desiredConfig': {}
+            'f:machineconfiguration.openshift.io/lastAppliedDrain': {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2025-03-28T20:31:56Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:volumesAttached': {}
+      subresource: status
+    - manager: vdcalta3035
+      operation: Update
+      apiVersion: v1
+      time: '2025-03-28T20:47:06Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:k8s.ovn.org/host-addresses': {}
+            'f:k8s.ovn.org/host-cidrs': {}
+            'f:k8s.ovn.org/remote-zone-migrated': {}
+            'f:k8s.ovn.org/zone-name': {}
+      subresource: status
+    - manager: machine-config-daemon
+      operation: Update
+      apiVersion: v1
+      time: '2025-03-30T17:38:11Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:machineconfiguration.openshift.io/currentConfig': {}
+            'f:machineconfiguration.openshift.io/desiredDrain': {}
+            'f:machineconfiguration.openshift.io/lastObservedServerCAAnnotation': {}
+            'f:machineconfiguration.openshift.io/lastSyncedControllerConfigResourceVersion': {}
+            'f:machineconfiguration.openshift.io/post-config-action': {}
+            'f:machineconfiguration.openshift.io/reason': {}
+            'f:machineconfiguration.openshift.io/ssh': {}
+            'f:machineconfiguration.openshift.io/state': {}
+    - manager: kubelet
+      operation: Update
+      apiVersion: v1
+      time: '2025-03-31T12:09:13Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:csi.volume.kubernetes.io/nodeid': {}
+        'f:status':
+          'f:allocatable':
+            'f:cpu': {}
+            'f:memory': {}
+          'f:capacity':
+            'f:cpu': {}
+            'f:memory': {}
+          'f:conditions':
+            'k:{"type":"DiskPressure"}':
+              'f:lastHeartbeatTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+            'k:{"type":"MemoryPressure"}':
+              'f:lastHeartbeatTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+            'k:{"type":"PIDPressure"}':
+              'f:lastHeartbeatTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+            'k:{"type":"Ready"}':
+              'f:lastHeartbeatTime': {}
+              'f:lastTransitionTime': {}
+              'f:message': {}
+              'f:reason': {}
+              'f:status': {}
+          'f:images': {}
+          'f:nodeInfo':
+            'f:bootID': {}
+            'f:containerRuntimeVersion': {}
+            'f:kernelVersion': {}
+            'f:kubeProxyVersion': {}
+            'f:kubeletVersion': {}
+            'f:osImage': {}
+          'f:volumesInUse': {}
+      subresource: status
+spec:
+  providerID: 'vsphere://42012adb-80ae-5d69-3ec8-b7c5bf9a22d6'
+
+ 
